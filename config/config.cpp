@@ -1,9 +1,9 @@
 #include "vex.h"
-using namespace vex;
+#include "config.h"
 
 vex::brain       Brain;
 vex::competition Competition;
-vex::controller Controller1;
+vex::controller  Controller1;
 
 // DRIVE
 vex::motor MotorL1( vex::PORT1 );
