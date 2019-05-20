@@ -8,10 +8,10 @@ extern vex::competition Competition;
 extern vex::controller  Controller1;
 
 // DRIVE
-extern vex::motor MotorL1;
-extern vex::motor MotorL2;
-extern vex::motor MotorR1;
-extern vex::motor MotorR2;
+extern vex::motor MotorLF;
+extern vex::motor MotorLB;
+extern vex::motor MotorRF;
+extern vex::motor MotorRB;
 
 extern vex::motor LF;
 extern vex::motor LB;
@@ -34,5 +34,7 @@ extern vex::digital_out LED;
 
 extern double potVal;
 extern int autonState;
+extern bool blinkLED;
+extern bool activeBrakeOn;
 
 #endif

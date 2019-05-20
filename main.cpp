@@ -4,16 +4,19 @@
 #include "selector/selector.h"
 #include "autons/autons.h"
 #include "drivecontrol/drivecontrol.h"
+
 using namespace vex;
 
 
 
 void pre_auton( void ) {
-  // All activities that occur before the competition starts
-  // Example: clearing encoders, setting servo positions, ...
-    //Gyro.startCalibration();
-    vex::task t4(GUI);
-    Pot.value(analogUnits::pct);
+  vex::task t4(GUI);
+  vex::task blink(ledBlinkLoop);
+  Gyro.startCalibration(5000);
+  blinkLED = true;
+  vex::task::sleep(6000);
+  blinkLED = false;
+  blink.stop();
 }
 
 

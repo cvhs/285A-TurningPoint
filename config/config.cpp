@@ -6,15 +6,15 @@ vex::competition Competition;
 vex::controller  Controller1;
 
 // DRIVE
-vex::motor MotorL1( vex::PORT1 );
-vex::motor MotorL2( vex::PORT9 );
-vex::motor MotorR1( vex::PORT7 );
-vex::motor MotorR2( vex::PORT10 );
+vex::motor MotorLF( vex::PORT1 );
+vex::motor MotorLB( vex::PORT9 );
+vex::motor MotorRF( vex::PORT7 );
+vex::motor MotorRB( vex::PORT10 );
 
-vex::motor LF = vex::motor(vex::PORT1, vex::gearSetting::ratio18_1, false);
-vex::motor LB = vex::motor(vex::PORT9, vex::gearSetting::ratio18_1, true);
-vex::motor RF = vex::motor(vex::PORT7, vex::gearSetting::ratio18_1, true);
-vex::motor RB = vex::motor(vex::PORT10, vex::gearSetting::ratio18_1, false);
+vex::motor LF = vex::motor(vex::PORT1);
+vex::motor LB = vex::motor(vex::PORT9);
+vex::motor RF = vex::motor(vex::PORT7);
+vex::motor RB = vex::motor(vex::PORT10);
 
 //BALL SUBSYSTEM
 vex::motor flywheel = vex::motor(vex::PORT3, vex::gearSetting::ratio6_1);
@@ -34,3 +34,5 @@ vex::digital_out LED = vex::digital_out(Brain.ThreeWirePort.F);
 //GLOBALS
 double potVal = 0;
 int autonState = 0;
+bool blinkLED = false;
+bool activeBrakeOn = false;

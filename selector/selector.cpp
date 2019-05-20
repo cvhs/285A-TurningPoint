@@ -8,26 +8,25 @@ void flat(void) {
     Brain.Screen.drawRectangle(20,140,40,40,vex::color::red);
     Brain.Screen.drawRectangle(180,60,40,40,vex::color::blue);
     Brain.Screen.drawRectangle(180,140,40,40,vex::color::blue);
-
+    
     // Flags
     Brain.Screen.drawRectangle(40, 20, 20, 15, vex::color::blue);
     Brain.Screen.drawRectangle(60, 20, 20, 15, vex::color::red);
-
+    
     Brain.Screen.drawRectangle(100, 20, 20, 15, vex::color::blue);
     Brain.Screen.drawRectangle(120, 20, 20, 15, vex::color::red);
-
+    
     Brain.Screen.drawRectangle(160, 20, 20, 15, vex::color::blue);
     Brain.Screen.drawRectangle(180, 20, 20, 15, vex::color::red);
 }
 
-
 int GUI() {
     flat();
     Brain.Screen.setFont(vex::fontType::prop40);
-
+    
     int autonState = 10;
     while(true) {
-        potVal = Pot.value(vex::percentUnits::pct);
+        double potVal = Pot.value(vex::percentUnits::pct);
         if (potVal <= 10){
             if (autonState != 0) {
                 flat();
@@ -67,3 +66,4 @@ int GUI() {
     }
     return(0);
 }
+
