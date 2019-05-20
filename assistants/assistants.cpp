@@ -1,6 +1,5 @@
 // assistants.cpp
-#include "vex.h"
-#include "config/config.h"
+#include "../config/config.h"
 #include "assistants.h"
 using namespace vex;
 
@@ -120,3 +119,20 @@ int telemetryTask() {
     }
     return(0);
 }
+
+
+/*void turnGyro(int degrees, int power){
+    float lastError = 0;
+    float erTotal = 0;
+    float lastD = 0;
+
+    int target = degrees;
+
+    float kp = 0;
+    float ki = 0;
+    float kd = 0;
+
+    globalTurnError = Gyro.
+
+
+}*/

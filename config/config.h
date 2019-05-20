@@ -32,4 +32,7 @@ extern vex::light Light;
 extern vex::pot Pot;
 extern vex::digital_out LED;
 
+extern double potVal;
+extern int autonState;
+
 #endif

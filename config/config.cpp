@@ -29,3 +29,8 @@ vex::accelerometer AccelerometerZ = vex::accelerometer(Brain.ThreeWirePort.E);
 vex::light Light = vex::light(Brain.ThreeWirePort.B);
 vex::pot Pot = vex::pot(Brain.ThreeWirePort.A);
 vex::digital_out LED = vex::digital_out(Brain.ThreeWirePort.F);
+
+
+//GLOBALS
+double potVal = 0;
+int autonState = 0;
