@@ -13,7 +13,7 @@ void execute() {
   //SKILLS
 
   } else if (potVal <= 10) {
-  //RED FRONT
+  //RED FRONT IS BEST
   frontRed();
   } else if (potVal <= 20 && potVal > 10) {
   //RED BACK
