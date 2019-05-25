@@ -16,6 +16,13 @@ void drivecontrol() {
       double leftPower = (double)Controller1.Axis3.value() + (double)Controller1.Axis1.value();
       double rightPower = (double)Controller1.Axis3.value() - (double)Controller1.Axis1.value();
 
+
+      //FLYWHEEL RESET
+      if (Controller1.ButtonLeft.pressing()) {
+        while(Controller1.ButtonLeft.pressing()){}
+        flywheel.spin( directionType::rev, 540, velocityUnits::rpm);
+      }
+      
       if (Controller1.ButtonDown.pressing()) {
           while(Controller1.ButtonDown.pressing()) {}
           if (activeBrakeOn) {
