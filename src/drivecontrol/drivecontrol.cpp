@@ -8,8 +8,8 @@ void drivecontrol() {
   MotorRF.setStopping(brakeType::hold);
   MotorLB.setStopping(brakeType::hold);
   MotorRB.setStopping(brakeType::hold);
-  LED.set(false);
-  activeBrakeOn = true;
+  LED.set(true);
+  activeBrakeOn = false;
   while (1) {
  
       //DRIVE 
@@ -36,7 +36,7 @@ void drivecontrol() {
       }
 
       if (activeBrakeOn) {
-        if (leftPower > 20 || rightPower > 20) {
+        if (abs(leftPower) > 20 || abs(rightPower) > 20) {
           leftDrive(leftPower);
           rightDrive(rightPower);
         } else {
