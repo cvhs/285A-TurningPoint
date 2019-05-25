@@ -9,6 +9,8 @@ using namespace vex;
 // EXECUTE
 
 void execute() {
+  double potVal = Pot.value(vex::percentUnits::pct);
+  
   if (potVal > 40){
   //SKILLS
 

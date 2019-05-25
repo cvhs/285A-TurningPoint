@@ -24,7 +24,6 @@ void pre_auton( void ) {
 void autonomous( void ) {
   vex::task::sleep(150);
   autonState = 10;
-  Controller1.Screen.print(Pot.value(vex::percentUnits::pct));
   execute();
 }
 
