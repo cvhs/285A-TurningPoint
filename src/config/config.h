@@ -13,11 +13,6 @@ extern vex::motor MotorLB;
 extern vex::motor MotorRF;
 extern vex::motor MotorRB;
 
-extern vex::motor LF;
-extern vex::motor LB;
-extern vex::motor RF;
-extern vex::motor RB;
-
 //BALL SUBSYSTEM
 extern vex::motor flywheel;
 extern vex::motor decsorer;

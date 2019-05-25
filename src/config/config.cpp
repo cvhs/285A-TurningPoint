@@ -11,11 +11,6 @@ vex::motor MotorLB( vex::PORT9 );
 vex::motor MotorRF( vex::PORT7 );
 vex::motor MotorRB( vex::PORT10 );
 
-vex::motor LF = vex::motor(vex::PORT1);
-vex::motor LB = vex::motor(vex::PORT9);
-vex::motor RF = vex::motor(vex::PORT7);
-vex::motor RB = vex::motor(vex::PORT10);
-
 //BALL SUBSYSTEM
 vex::motor flywheel = vex::motor(vex::PORT3, vex::gearSetting::ratio6_1);
 vex::motor decsorer = vex::motor(vex::PORT11, vex::gearSetting::ratio18_1);
