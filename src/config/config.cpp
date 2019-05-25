@@ -18,8 +18,8 @@ vex::motor RB = vex::motor(vex::PORT10);
 
 //BALL SUBSYSTEM
 vex::motor flywheel = vex::motor(vex::PORT3, vex::gearSetting::ratio6_1);
-vex::motor decsorer = vex::motor(vex::PORT5, vex::gearSetting::ratio18_1);
-vex::motor intake = vex::motor(vex::PORT6, vex::gearSetting::ratio18_1);
+vex::motor decsorer = vex::motor(vex::PORT11, vex::gearSetting::ratio18_1);
+vex::motor intake = vex::motor(vex::PORT2, vex::gearSetting::ratio18_1);
 vex::motor indexer = vex::motor(vex::PORT4, vex::gearSetting::ratio18_1);
 
 //SENSORS
