@@ -36,10 +36,15 @@ void drivecontrol() {
       }
 
       if (activeBrakeOn) {
-        MotorLF.stop(brakeType::hold);
-        MotorRF.stop(brakeType::hold);
-        MotorLB.stop(brakeType::hold);
-        MotorRB.stop(brakeType::hold);
+        if (leftPower > 20 || rightPower > 20) {
+          leftDrive(leftPower);
+          rightDrive(rightPower);
+        } else {
+          MotorLF.stop(brakeType::hold);
+          MotorRF.stop(brakeType::hold);
+          MotorLB.stop(brakeType::hold);
+          MotorRB.stop(brakeType::hold);
+        }
       } else {
         leftDrive(leftPower);
         rightDrive(rightPower);
