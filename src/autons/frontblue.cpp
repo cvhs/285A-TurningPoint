@@ -10,13 +10,13 @@ void frontBlue() {
   flywheel.spin(directionType::rev, 540, velocityUnits::rpm);
   intake.spin(directionType::rev,100,velocityUnits::pct);
   //FORWARD: 1020 degrees
-  moveForwardFor(300, 300, 127, 127); // CHANGE TO NORMAL AT COMP
+  moveForwardFor(1120, 1120, 127, 127); // CHANGE TO NORMAL AT COMP
   leftDrive(0);
   rightDrive(0);
   vex::task::sleep(500);
-  moveForwardFor(-480, -480, 127, 127); // CHANGE TO NORMAL AT COMP
-  turnClockwiseFor(825);
-  indexer.rotateFor(360, rotationUnits::deg);
+  moveForwardFor(-1300, -1300, 127, 127); // CHANGE TO NORMAL AT COMP
+  turnClockwiseFor(940);
+  indexer.rotateFor(390, rotationUnits::deg);
   moveForwardFor(740, 710, 127, 127);
   indexer.rotateFor(360, rotationUnits::deg);
   moveForwardFor(700, 700, 127, 127);

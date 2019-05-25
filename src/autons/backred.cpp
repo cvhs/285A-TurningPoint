@@ -22,7 +22,7 @@ void backRed() {
     vex::task::sleep(500);
     decsorer.rotateTo(0, rotationUnits::deg, 100, velocityUnits::pct);
     //TURN: 37 degrees clockwise
-    /*turnClockwiseFor(-360);
+    turnClockwiseFor(-360);
 
     //FORWARD: 1300 degrees
     moveForwardFor(1120, 1120, 127, 127);
@@ -49,5 +49,5 @@ void backRed() {
     vex::task::sleep(1500);
     leftDrive(0);
     rightDrive(0);
-    vex::task::sleep(100);*/
+    vex::task::sleep(100);
 }
